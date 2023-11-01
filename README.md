@@ -19,7 +19,14 @@ distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts"
 
 ### Solution
 Use preference data from AI Feedback to improve dSFT. 
-* **What does this actually mean/do**: 
+* **What does this actually mean/do**:
+
+* The main step is to utilize AI Feedback (AIF) from an ensemble of teacher models as preference
+data, and apply distilled direct preference optimization as the learning objective (Rafailov et al.,
+2023). We refer to this approach as dDPO. Notably, it requires no human annotation and no sampling
+compared to using other approaches like proximal preference optimization (PPO) (Schulman et al.,
+2017). Moreover, by utilizing a small base LM, the resulting chat model can be trained in a matter
+of hours on 16 A100s (80GB) = ~10k per gpu
 
 ### How can it be applied to my current work/research
 Know how to apply (direct) distilled Supervised Fine-Tuning and fine-tune w. preference data from AI feedback. 
