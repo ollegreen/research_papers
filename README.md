@@ -4,6 +4,8 @@ A place to read, take notes, log and apply / do experiments based on the researc
 
 A tinkering research place if you will. 
 
+______
+
 ## Paper: Chain of Thought (CoT)
 Date read: 1 Nov 2023
 
