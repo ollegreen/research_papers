@@ -1,12 +1,14 @@
 # Research Papers
 
-A place to read, take notes, log and apply / do experiments based on the research to see how useful it is.
+Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will. 
 
-A tinkering research place if you will. 
+Summaries below in the readme, and the notes for reach paper are in the respective categorical directories.
+
+![banner](https://api.deepai.org/job-view-file/39499df3-b5e1-427c-a538-5de6ee568594/outputs/output.jpg)
 
 ______
 
-
+# Summaries
 
 
 
