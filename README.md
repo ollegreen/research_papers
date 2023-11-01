@@ -8,10 +8,31 @@ Summaries below in the readme, and the notes for reach paper are in the respecti
 
 ______
 
+# Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
+Read: Nov 2023
+Mental Reference: HuggingFace making smaller but more efficient model.
+
+### Problem 
+distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". 
+* Natural prompt: 
+* Non-natural prompt: 
+
+### Solution
+Use preference data from AI Feedback to improve dSFT. 
+* **What does this actually mean/do**: 
+
+### How can it be applied to my current work/research
+Know how to apply (direct) distilled Supervised Fine-Tuning and fine-tune w. preference data from AI feedback. 
+
+
+
+
+
 
 
 # Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
 Read: Sep 2023
+Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden". 
 
 ### Problem 
 Hard to evaluate LLM models due to “semantic equivalence”. It’s Paris and Paris is not the same for regular LLMs = entropy is still the same. 
@@ -96,6 +117,10 @@ Two concepts as baseline:
 - Give hand holding to the LLM by giving it examples of both reasoning and examples of how it would look in different scenarios.
 
 
+
+______
+
+# Template:
 
 # Paper:  
 Read: 
