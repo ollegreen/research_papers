@@ -8,15 +8,9 @@ Summaries below in the readme, and the notes for reach paper are in the respecti
 
 ______
 
-# Summaries
 
 
-
-
-
-
-
-## Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
+# Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
 Read: Sep 2023
 
 ### Problem 
@@ -41,7 +35,7 @@ This feels very generally useful for most applications, but still need to unders
 
 
 
-## Paper: Oxford — “CLAM: Selective Clarification for Ambiguous Questions” 
+# Paper: Oxford — “CLAM: Selective Clarification for Ambiguous Questions” 
 Read: Sep 2023
 
 ### Problem 
@@ -60,7 +54,7 @@ In applied operations you want something to be able to handle this possible ambi
 
 
 
-## Paper: ReAct - Synergizing Reasoning and Acting in Language Models
+# Paper: ReAct - Synergizing Reasoning and Acting in Language Models
 Read: Oct 2023
 
 ### Problem
@@ -82,7 +76,7 @@ Basically gives a prompt template to the LLM to show a pattern of Reasoning firs
 
 
 
-## Paper: Chain of Thought (CoT)
+# Paper: Chain of Thought (CoT)
 Read: Oct 2023
 
 ### Problem
@@ -103,7 +97,7 @@ Two concepts as baseline:
 
 
 
-## Paper:  
+# Paper:  
 Read: 
 
 ### Problem 
