@@ -4,7 +4,7 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 
 Summaries below in the readme, and the notes for reach paper are in the respective categorical directories.
 
-![banner](https://api.deepai.org/job-view-file/39499df3-b5e1-427c-a538-5de6ee568594/outputs/output.jpg)
+![banner](https://imageupload.io/ib/r9SBL4OyMajfrDK_1698921485.jpeg)
 
 ______
 
