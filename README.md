@@ -8,14 +8,57 @@ Summaries below in the readme, and the notes for reach paper are in the respecti
 
 ______
 
+
+
+# Template:
+
+# Paper:  
+Read: 
+
+### Problem 
+
+
+### Solution
+
+
+### How can it be applied to my current work/research
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
 Read: Nov 2023
 Mental Reference: HuggingFace making smaller but more efficient model.
 
 ### Problem 
-distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". 
-* Natural prompt: 
-* Non-natural prompt: 
+distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". So this refers to that dSFT models (like Alpaca and Vicuna) are trained on instructions based datasets. But since they've been trained/fine-tuned on instruction based data, it isn't as promising to give them "natural" prompts. For instance it would be rare that we ask ChatGPT in a instruction-based way such as: ", instead we would simply ask it: "How do I select the 5th column in a pandas dataframe?" 
+
+link to Alpaca data: [link](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)
+
+´´´
+rfdsfds 
+´´´
+
+Vicuna example fine-tuning data: 
+```
+{
+        "instruction": "Give three tips for staying healthy.",
+        "input": "",
+        "output": "1.Eat a balanced diet and make sure to include plenty of fruits and vegetables. \n2. Exercise regularly to keep your body active and strong. \n3. Get enough sleep and maintain a consistent sleep schedule."
+    }
+```
+
 
 ### Solution
 Use preference data from AI Feedback to improve dSFT. 
