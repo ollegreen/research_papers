@@ -8,7 +8,24 @@ Summaries below in the readme, and the notes for reach paper are in the respecti
 
 ______
 
+## Paper: "Orca 2: Teaching Small Language Models How to Reason"
+Read: -
+Institution: Microsoft Research
+Mental Reference: 
+Link: https://arxiv.org/pdf/2311.11045.pdf
 
+### Problem
+Task Diversity and Data Scaling, it often captures the style of models being trained on Chat-GPT data, but it’s less on logic/reasoning and more on imitation. 
+
+### Solution 
+The key contributions of the paper are:
+
+1. **Explanation Tuning**: they basically do the same {query, response} style, but make GPT-4 to give detailed explinations of the logic/reasoning as well. For instance: “explain like I’m five, think step by step and justify your response”. Quote: "We augment ⟨query, response⟩ pairs with detailed responses from GPT-4 that explain the reasoning process of the teacher as it generates the response. These provide the student with additional signals for learning. We leverage system instructions (e.g.., explain like I’m five, think step-by-step and justify your response, etc.) to elicit such explanations. This is in contrast to vanilla instruction tuning, which only uses the prompt and the LFM response for learning, providing little opportunity for mimicking the LFM’s “thought” process.
+
+2. **Scaling and Task instructions**: they use Flan FLAN-v2 collection (paper link) and pick out out of 10s of millions instructions → use a sample from the task collection to form a diverse mix of tasks. 5 million ChatGPT responses used → sample 1 million of them to acquire GPT-4 responses. → demonstrate how ChatGPT as a teacher assistant helps in progressive learning. Quote: We utilize the Flan 2022 Collection [19] as it provides an extensive public assortment of tasks and instructions. Particularly, we use FLAN-v2, supplemented with high-quality templates, advanced formatting patterns, and data augmentations. Even though FLAN holds tens of millions of instructions, we selectively sample from the task collection to form a diverse mixture of tasks, which we then further sub-sample to generate complex prompts. These prompts are used to query LFMs like ChatGPT and GPT-4, thus creating a rich and diverse training set. We collect 5 million ChatGPT responses, from which 1 million is further sampled to acquire GPT-4 responses. We demonstrate how ChatGPT as a teacher assistant helps in progressive learning.
+
+### Applicability: How can it be applied to my current work & research
+Not applicable directly, as we're not dealing with Small Language Models (SLMs) at the moment. But, good for future reference on when developing SLMs further.
 
 
 
@@ -55,9 +72,10 @@ Know how to apply (direct) distilled Supervised Fine-Tuning and fine-tune w. pre
 
 ______
 
-## Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
+## Paper: “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
 Read: Sep 2023
-Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden". 
+Institution: Oxford OATML
+Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden".
 
 ### Problem 
 Hard to evaluate LLM models due to “semantic equivalence”. It’s Paris and Paris is not the same for regular LLMs = entropy is still the same. 
