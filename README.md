@@ -1,6 +1,6 @@
 # Research Papers
 
-Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will. 
+Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will.
 
 Summaries below in the readme, and the notes for reach paper are in the respective categorical directories.
 
@@ -10,47 +10,22 @@ ______
 
 
 
-# Template:
-
-# Paper:  
-Read: 
-
-### Problem 
-
-
-### Solution
-
-
-### How can it be applied to my current work/research
 
 
 
 
+______
 
-
-
-
-
-
-
-
-
-
-
-# Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
+## Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
 Read: Nov 2023
 Mental Reference: HuggingFace making smaller but more efficient model.
 
-### Problem 
-distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". So this refers to that dSFT models (like Alpaca and Vicuna) are trained on instructions based datasets. But since they've been trained/fine-tuned on instruction based data, it isn't as promising to give them "natural" prompts. For instance it would be rare that we ask ChatGPT in a instruction-based way such as: ", instead we would simply ask it: "How do I select the 5th column in a pandas dataframe?" 
+### Problem
+distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". So this refers to that dSFT models (like Alpaca and Vicuna) are trained on instructions based datasets. But since they've been trained/fine-tuned on instruction based data, it isn't as promising to give them "natural" prompts. For instance it would be rare that we ask ChatGPT in a instruction-based way such as: ", instead we would simply ask it: "How do I select the 5th column in a pandas dataframe?"
 
 link to Alpaca data: [link](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)
 
-´´´
-rfdsfds 
-´´´
-
-Vicuna example fine-tuning data: 
+Vicuna example fine-tuning data:
 ```
 {
         "instruction": "Give three tips for staying healthy.",
@@ -61,7 +36,7 @@ Vicuna example fine-tuning data:
 
 
 ### Solution
-Use preference data from AI Feedback to improve dSFT. 
+Use preference data from AI Feedback to improve dSFT.
 * **What does this actually mean/do**:
 
 * The main step is to utilize AI Feedback (AIF) from an ensemble of teacher models as preference
@@ -71,16 +46,16 @@ compared to using other approaches like proximal preference optimization (PPO) (
 2017). Moreover, by utilizing a small base LM, the resulting chat model can be trained in a matter
 of hours on 16 A100s (80GB) = ~10k per gpu
 
-### How can it be applied to my current work/research
+### Applicability: How can it be applied to my current work & research
 Know how to apply (direct) distilled Supervised Fine-Tuning and fine-tune w. preference data from AI feedback. 
 
 
 
 
 
+______
 
-
-# Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
+## Paper: Oxford — “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
 Read: Sep 2023
 Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden". 
 
@@ -90,7 +65,7 @@ Hard to evaluate LLM models due to “semantic equivalence”. It’s Paris and 
 ### Solution
 Proposes Deals with measuring uncertainty using their proposed “semantic entropy”, incorporate liugnustic invariances created to shared meanings. So basically: It's Paris and Paris = same, lower entropy in the dataset.
 
-### How can it be applied to my current work/research
+### Applicability: How can it be applied to my current work & research
 This feels very generally useful for most applications, but still need to understand the implementation of the code better to see how complex this is to apply for production environments. 
 
 
@@ -104,9 +79,9 @@ This feels very generally useful for most applications, but still need to unders
 
 
 
+______
 
-
-# Paper: Oxford — “CLAM: Selective Clarification for Ambiguous Questions” 
+## Paper: Oxford — “CLAM: Selective Clarification for Ambiguous Questions” 
 Read: Sep 2023
 
 ### Problem 
@@ -115,7 +90,7 @@ Users give ambiguous questions that are hard for LLMs to answer with certianty a
 ### Solution
 A LLM framework to ask clarifying questions for ambigous questions. 
 
-### How can it be applied to my current work/research
+### Applicability: How can it be applied to my current work & research
 In applied operations you want something to be able to handle this possible ambiguity in the user input, especially in a production environment. 
 
 
@@ -123,9 +98,9 @@ In applied operations you want something to be able to handle this possible ambi
 
 
 
+__________
 
-
-# Paper: ReAct - Synergizing Reasoning and Acting in Language Models
+## Paper: ReAct - Synergizing Reasoning and Acting in Language Models
 Read: Oct 2023
 
 ### Problem
@@ -135,7 +110,7 @@ Improve the concept of "Chain of Thought"-prompting for outputs from LLMs, as it
 ### Solution
 Basically gives a prompt template to the LLM to show a pattern of Reasoning first, then Actioning it. **It also helps with interpretability** as you can see how the model is reasoning through to the answer. 
 
-### How can it be applied to my current work/reserach
+### Applicability: How can it be applied to my current work & research
 * Together with LangChain, this is useful for more reasoning is of high priority/importance.
 * It helps to make sure the model picks up the reasoning and aligns it with a more similar way to how we humans solve problems: by reasoning "hmm should I 
 
@@ -145,9 +120,9 @@ Basically gives a prompt template to the LLM to show a pattern of Reasoning firs
 
 
 
+________
 
-
-# Paper: Chain of Thought (CoT)
+## Paper: Chain of Thought (CoT)
 Read: Oct 2023
 
 ### Problem
@@ -163,22 +138,24 @@ Two concepts as baseline:
 ### Solution
 - **CoT**: Combines the two of showing some examples of the thought process. 
 
-### How can it be applied to my current work/reserach
+### Applicability: How can it be applied to my current work & research
 - Give hand holding to the LLM by giving it examples of both reasoning and examples of how it would look in different scenarios.
 
 
 
 ______
 
-# Template:
+Template:
 
-# Paper:  
+## Paper:
 Read: 
+Institution: 
+Mental Reference: 
 
-### Problem 
+### Problem
 
 
 ### Solution
 
 
-### How can it be applied to my current work/research
+### Applicability: How can it be applied to my current work & research
