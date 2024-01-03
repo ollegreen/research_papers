@@ -5,9 +5,9 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 ______
 
 ## Paper: "Large Language Models as Optimizers"
-* Read: Jan 2024
-* Institution: Google Deepmind
-* Mental Reference: Using LLMs to figure out what the optimal prompt is > prompt engineering.
+* **Read**: Jan 2024
+* **Institution**: Google Deepmind
+* **Mental Reference**: Using LLMs to figure out what the optimal prompt is > prompt engineering.
 
 ### Problem
 People today have to figure out themselves what the optimal prompt is by doing prompt engineering for a specific task, which is time consuming and slightly random.
@@ -199,10 +199,10 @@ ______
 Template:
 
 ## Paper:
-* Read: 
-* Institution: 
-* Mental Reference: 
-* Link: 
+* **Read**: 
+* **Institution**: 
+* **Mental Reference**: 
+* **Link**: 
 
 ### Problem
 
