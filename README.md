@@ -1,10 +1,6 @@
 # Research Papers
 
-Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will.
-
-Summaries below in the readme, and the notes for reach paper are in the respective categorical directories.
-
-![banner](https://imageupload.io/ib/r9SBL4OyMajfrDK_1698921485.jpeg)
+Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will. Summaries below in the readme, and the notes for reach paper are in the papers directory.
 
 ______
 
