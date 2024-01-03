@@ -5,11 +5,9 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 ______
 
 ## Paper: "Large Language Models as Optimizers"
-Read: Jan 2024
-
-Institution: Google Deepmind
-
-Mental Reference: Using LLMs to figure out what the optimal prompt is > prompt engineering.
+* Read: Jan 2024
+* Institution: Google Deepmind
+* Mental Reference: Using LLMs to figure out what the optimal prompt is > prompt engineering.
 
 ### Problem
 People today have to figure out themselves what the optimal prompt is by doing prompt engineering for a specific task, which is time consuming and slightly random.
@@ -32,6 +30,12 @@ Intuitive example for prompt optimization, quote: "the initial instruction is �
 ### Personal Questions
 - Was there any prompt that was "novel" at any point? Or was it simply their best optimisation generating: "Take a deep breath and work on this problem step-by-step.", which doesn't feel to novel compared to simply giving this directly to the model?
 - In section 5.1 for models, why did they pick specifically these models for the optimizer and scorer? Reference: "• Optimizer LLM: Pre-trained PaLM 2-L (Anil et al., 2023), instruction-tuned PaLM 2-L (denoted PaLM 2-L-IT), text-bison, gpt-3.5-turbo, and gpt-4. • Scorer LLM: Pre-trained PaLM 2-L and text-bison. With pre-trained PaLM 2-L as the scorer, the optimizer LLM generates A_begin instructions. Since text-bison has been instruction-tuned, the optimizer LLM generates Q_begin and Q_end instructions when text-bison is used as the scorer.
+
+
+
+
+
+
 
 
 _______
@@ -62,8 +66,8 @@ Not applicable directly, as we're not dealing with Small Language Models (SLMs) 
 ______
 
 ## Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
-Read: Nov 2023
-Mental Reference: HuggingFace making smaller but more efficient model.
+* Read: Nov 2023
+* Mental Reference: HuggingFace making smaller but more efficient model.
 
 ### Problem
 distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". So this refers to that dSFT models (like Alpaca and Vicuna) are trained on instructions based datasets. But since they've been trained/fine-tuned on instruction based data, it isn't as promising to give them "natural" prompts. For instance it would be rare that we ask ChatGPT in a instruction-based way such as: ", instead we would simply ask it: "How do I select the 5th column in a pandas dataframe?"
@@ -101,9 +105,9 @@ Know how to apply (direct) distilled Supervised Fine-Tuning and fine-tune w. pre
 ______
 
 ## Paper: “Semantic Uncertainty; Linguistic Invariances for Uncertainty Estimation in Natural Language Generation” 
-Read: Sep 2023
-Institution: Oxford OATML
-Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden".
+* Read: Sep 2023
+* Institution: Oxford OATML
+* Mental Reference: Oxford making it easier to make sure that semantically similar words make the entropy look lower. As "Sweden" is the same meaning as "It's Sweden".
 
 ### Problem 
 Hard to evaluate LLM models due to “semantic equivalence”. It’s Paris and Paris is not the same for regular LLMs = entropy is still the same. 
@@ -127,8 +131,9 @@ This feels very generally useful for most applications, but still need to unders
 
 ______
 
-## Paper: Oxford — “CLAM: Selective Clarification for Ambiguous Questions” 
-Read: Sep 2023
+## Paper: “CLAM: Selective Clarification for Ambiguous Questions” 
+* Read: Sep 2023
+* Institution: Oxford OATML
 
 ### Problem 
 Users give ambiguous questions that are hard for LLMs to answer with certianty as they don’t know what is being asked, so the give the most likely answer instead of asking a question back (humans asking vague questions such as “when did he land on the moon?” When meaning to ask “when did Alan Bean land on the moon?)
@@ -147,7 +152,7 @@ In applied operations you want something to be able to handle this possible ambi
 __________
 
 ## Paper: ReAct - Synergizing Reasoning and Acting in Language Models
-Read: Oct 2023
+* Read: Oct 2023
 
 ### Problem
 
@@ -169,7 +174,7 @@ Basically gives a prompt template to the LLM to show a pattern of Reasoning firs
 ________
 
 ## Paper: Chain of Thought (CoT)
-Read: Oct 2023
+* Read: Oct 2023
 
 ### Problem
 
@@ -194,9 +199,10 @@ ______
 Template:
 
 ## Paper:
-Read: 
-Institution: 
-Mental Reference: 
+* Read: 
+* Institution: 
+* Mental Reference: 
+* Link: 
 
 ### Problem
 
