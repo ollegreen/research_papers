@@ -10,17 +10,24 @@ Institution:
 Mental Reference: 
 
 ### Problem
-
+People today have to figure out themselves what the optimal prompt is by doing prompt engineering for a specific task, which is time consuming and slightly random.
 
 ### Solution
+Intuitive example for prompt optimization, quote: "the initial instruction is “Let’s solve the problem” with a (approximated, and same below) training accuracy of 60.5. We observe that the optimization curve shows an overall upward trend with several leaps throughout the optimization process, for example:
+* “Let’s think carefully about the problem and solve it together.” at Step 2 with the training accuracy 63.2;
+* “Let’s break it down!” at Step 4 with training accuracy 71.3;
+* “Let’s calculate our way to the solution!” at Step 5 with training accuracy 73.9;
+* “Let’s do the math!” at Step 6 with training accuracy 78.2.
 
+**Prompt Optimization experimentation setup and eval on GSM8K**: sample 3.5% random questions of the GSM8K training set, and evaluate on full test set.
 
 ### Applicability: How can it be applied to my current work & research
 - Semantic Optimsation Paper: Smart that they first try on travelling salesman before testing on prompt optimisation, to see it's real optimisation capabilities. Consider adding this to paper.
+- **Production environments**: if it's a repetitive task that will occur >10M times a week, finding the most optimal prompt by itself could potentially be really helpful and reduce time on prompt engineering.
 - tested on GSM8K, 8% improvement can be a benchmark to our approach of how well it should improve the score.
 - Improvement: the generated prompts feels a bit lackluster (*Take a deep breath and work on this problem step-by-step.*) compared to their benchmark being the classic *Let's think step by step.*) Needs to be tested on more unique problems to see the benefit. 
 
-### Personal questions
+### Personal Questions
 - in section 5.1 for models, why did they pick specifically these models for the optimizer and scorer? Reference: "• Optimizer LLM: Pre-trained PaLM 2-L (Anil et al., 2023), instruction-tuned PaLM 2-L (denoted PaLM 2-L-IT), text-bison, gpt-3.5-turbo, and gpt-4. • Scorer LLM: Pre-trained PaLM 2-L and text-bison. With pre-trained PaLM 2-L as the scorer, the optimizer LLM generates A_begin instructions. Since text-bison has been instruction-tuned, the optimizer LLM generates Q_begin and Q_end instructions when text-bison is used as the scorer.
 
 
