@@ -28,6 +28,7 @@ Intuitive example for prompt optimization, quote: "the initial instruction is �
 - Improvement: the generated prompts feels a bit lackluster (*Take a deep breath and work on this problem step-by-step.*) compared to their benchmark being the classic *Let's think step by step.*) Needs to be tested on more unique problems to see the benefit. 
 
 ### Personal Questions
+- Is there any prompt that was "novel" at any point? Or was it simply their best optimisation generating: "Take a deep breath and work on this problem step-by-step.", which doesn't feel to novel compared to simply giving this directly to the model?
 - in section 5.1 for models, why did they pick specifically these models for the optimizer and scorer? Reference: "• Optimizer LLM: Pre-trained PaLM 2-L (Anil et al., 2023), instruction-tuned PaLM 2-L (denoted PaLM 2-L-IT), text-bison, gpt-3.5-turbo, and gpt-4. • Scorer LLM: Pre-trained PaLM 2-L and text-bison. With pre-trained PaLM 2-L as the scorer, the optimizer LLM generates A_begin instructions. Since text-bison has been instruction-tuned, the optimizer LLM generates Q_begin and Q_end instructions when text-bison is used as the scorer.
 
 
