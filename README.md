@@ -18,7 +18,7 @@ Mental Reference:
 ### Applicability: How can it be applied to my current work & research
 - Semantic Optimsation Paper: Smart that they first try on travelling salesman before testing on prompt optimisation, to see it's real optimisation capabilities. Consider adding this to paper.
 - tested on GSM8K, 8% improvement can be a benchmark to our approach of how well it should improve the score.
-
+- Improvement: the generated prompts feels a bit lackluster (*Take a deep breath and work on this problem step-by-step.*) compared to their benchmark being the classic *Let's think step by step.*) Needs to be tested on more unique problems to see the benefit. 
 
 
 
