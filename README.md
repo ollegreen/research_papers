@@ -8,6 +8,28 @@ Summaries below in the readme, and the notes for reach paper are in the respecti
 
 ______
 
+## Paper:
+Read: 
+Institution: 
+Mental Reference: 
+
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+
+
+
+
+
+
+
+_______
+
+
 ## Paper: "Orca 2: Teaching Small Language Models How to Reason"
 Read: -
 Institution: Microsoft Research
