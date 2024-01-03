@@ -20,7 +20,7 @@ Mental Reference:
 
 
 ### Applicability: How can it be applied to my current work & research
-
+- Semantic Optimsation Paper: Smart that they first try on travelling salesman before testing on prompt optimisation, to see it's real optimisation capabilities. Consider adding this to paper.
 
 
 
