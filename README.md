@@ -18,11 +18,14 @@ It is difficult to compare how a 8% improvement in GSM8K means to other domains 
 ### Solution
 They translate performance gains from different benchmarks into a "common currency": **Common Compute Gain**: *"how much additional training compute would have been needed to improve benchmark performance by as much as the post-training enhancement"*.
 
+### Insights
 * Great visualisation of how different approaches shows more cost-efficient solutions and how they compare. 
 * Helps to show that current methodologies that shows improved results might have a significant compute cost, which might not be worth the gain in performance depending on budget and performance requirements. 
 
 ### Applicability: How can it be applied to my current work & research
 * Look and verify if you can apply and ensemble some cost-efficient solutions together in the LLM production projects and reserach.
+* Agents shows to have 80x Inference cost for LATS and HumanEval. Take this into budget considerations for agent based solutions.
+* For programming tasks (SQL/python) check out "Parcel", quote: "*The model decomposes a complex task into natural language function descriptions, generates modular implementations for each, and searches over combinations of these implementations by testing against constraints.*" https://arxiv.org/abs/2212.10561
 * Few-shot, LATS and CoT are great in terms of no additional compute cost. However what is important to notice is the additional runtime cost goes up 10-100 times = for production environments this might not be the optimal long-term solutions.
 * Majority voting is both high in added compute as well as additional runtime cost compared to performance improvements. Need to deep dive why.
 * Look at Category 3 for Agent enhancements to verify your Agent projects and the current methodologies: 
