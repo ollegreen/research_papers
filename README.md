@@ -18,13 +18,18 @@ It is difficult to compare how a 8% improvement in GSM8K means to other domains 
 ### Solution
 They translate performance gains from different benchmarks into a "common currency": **Common Compute Gain**: *"how much additional training compute would have been needed to improve benchmark performance by as much as the post-training enhancement"*.
 
-Great visualisation of how different approaches shows more cost-efficient solutions and how they compare. 
+* Great visualisation of how different approaches shows more cost-efficient solutions and how they compare. 
+* Helps to show that current methodologies that shows improved results might have a significant compute cost, which might not be worth the gain in performance depending on budget and performance requirements. 
 
 ### Applicability: How can it be applied to my current work & research
 * Look and verify if you can apply and ensemble some cost-efficient solutions together in the LLM production projects and reserach.
+* Look at Category 3 for Agent enhancements to verify your Agent projects and the current methodologies: 
 
-
-
+1. Tool enhancements: teaching an AI system to use new tools, like a web browser.
+2. Prompting enhancements: changing the text-based input to the model to steer its behavior and reasoning, e.g. including an example response to a similar question.
+3. Scaffolding enhancements: programs that structure the model’s reasoning and the flow of information between different copies of the model (e.g. producing AI agents).
+4. Solution choice enhancements: techniques for generating and then choosing between multiple candidate solutions to a problem.
+5. Data enhancements: techniques for generating more, higher-quality data for fine-tuning.
 
 
 
