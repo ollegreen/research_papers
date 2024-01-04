@@ -24,6 +24,7 @@ They translate performance gains from different benchmarks into a "common curren
 ### Applicability: How can it be applied to my current work & research
 * Look and verify if you can apply and ensemble some cost-efficient solutions together in the LLM production projects and reserach.
 * Few-shot, LATS and CoT are great in terms of no additional compute cost. However what is important to notice is the additional runtime cost goes up 10-100 times = for production environments this might not be the optimal long-term solutions.
+* Majority voting is both high in added compute as well as additional runtime cost compared to performance improvements. Need to deep dive why.
 * Look at Category 3 for Agent enhancements to verify your Agent projects and the current methodologies: 
 
 1. Tool enhancements: teaching an AI system to use new tools, like a web browser.
@@ -31,6 +32,7 @@ They translate performance gains from different benchmarks into a "common curren
 3. Scaffolding enhancements: programs that structure the model’s reasoning and the flow of information between different copies of the model (e.g. producing AI agents).
 4. Solution choice enhancements: techniques for generating and then choosing between multiple candidate solutions to a problem.
 5. Data enhancements: techniques for generating more, higher-quality data for fine-tuning.
+
 
 ### Problems
 * On the 2nd page they mention they have not conducted these experiements themselves but instead relied on the results from other reserach papers -> **they don't have high confidence in this metric that they have created**. Quote: *"we don’t have high confidence in each individual CEG estimate, but we think that in aggregate they are informative about the typical benefit produced by an enhancement."* -> Take these with a pinch of salt, as some might not have accurate compute estimates. 
