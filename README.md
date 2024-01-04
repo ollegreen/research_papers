@@ -2,7 +2,35 @@
 
 Thoughts, summaries and notes on recently read research papers. A research _tinkering_ place, if you will. Summaries below in the readme, and the notes for reach paper are in the papers directory.
 
-______
+_______
+
+
+
+## Paper: AI capabilities can be significantly improved without expensive retraining
+* **Read**: Jan 2023
+* **Institution**: UC Berkeley, Open Philantropy
+* **Mental Reference**: Summary of current ways to improve LLM performance (such as CoT), quantified on a compute to performance basis.
+* **Link**: https://arxiv.org/pdf/2312.07413.pdf
+
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+
+
+
+
+
+
+
+
+
+
+_______
+
 
 ## Paper: "Large Language Models as Optimizers"
 * **Read**: Jan 2024
