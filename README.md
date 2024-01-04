@@ -13,13 +13,15 @@ _______
 * **Link**: https://arxiv.org/pdf/2312.07413.pdf
 
 ### Problem
-
+It is difficult to compare how a 8% improvement in GSM8K means to other domains outside of this benchmark. As the author says: "It is hard to meaningfully compare the benefits of post-training enhancements that apply to different domains. For example, how does 10% greater accuracy on the MATH benchmark (Hendrycks et al., 2021) compare to 10% greater accuracy in a multiple choice knowledge test, or to 10% lower perplexity in a language modeling task?"
 
 ### Solution
+They translate performance gains from different benchmarks into a "common currency": **Common Compute Gain**: *"how much additional training compute would have been needed to improve benchmark performance by as much as the post-training enhancement"*.
 
+Great visualisation of how different approaches shows more cost-efficient solutions and how they compare. 
 
 ### Applicability: How can it be applied to my current work & research
-
+* Look and verify if you can apply and ensemble some cost-efficient solutions together in the LLM production projects and reserach.
 
 
 
