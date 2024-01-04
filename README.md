@@ -31,7 +31,8 @@ They translate performance gains from different benchmarks into a "common curren
 4. Solution choice enhancements: techniques for generating and then choosing between multiple candidate solutions to a problem.
 5. Data enhancements: techniques for generating more, higher-quality data for fine-tuning.
 
-
+### Problems
+* On the 2nd page they mention they have not conducted these experiements themselves but instead relied on the results from other reserach papers -> **they don't have high confidence in this metric that they have created**. Quote: *"we don’t have high confidence in each individual CEG estimate, but we think that in aggregate they are informative about the typical benefit produced by an enhancement."* -> Take these with a pinch of salt, as some might not have accurate compute estimates. 
 
 
 
