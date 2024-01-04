@@ -23,6 +23,7 @@ They translate performance gains from different benchmarks into a "common curren
 
 ### Applicability: How can it be applied to my current work & research
 * Look and verify if you can apply and ensemble some cost-efficient solutions together in the LLM production projects and reserach.
+* Few-shot, LATS and CoT are great in terms of no additional compute cost. However what is important to notice is the additional runtime cost goes up 10-100 times = for production environments this might not be the optimal long-term solutions.
 * Look at Category 3 for Agent enhancements to verify your Agent projects and the current methodologies: 
 
 1. Tool enhancements: teaching an AI system to use new tools, like a web browser.
