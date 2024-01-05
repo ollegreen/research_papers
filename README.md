@@ -109,7 +109,7 @@ ______
 
 ## Paper: "ZEPHYR: DIRECT DISTILLATION OF LM ALIGNMENT"
 * Read: Nov 2023
-* Mental Reference: HuggingFace making smaller but more efficient model.
+* Mental Reference: HuggingFace making smaller but more efficient model. Zephyr is Mistral but with AIF + dDPO.
 
 ### Problem
 distilled Supervised Fine-Tuning (dSFT) do not respond well to "natural prompts". So this refers to that dSFT models (like Alpaca and Vicuna) are trained on instructions based datasets. But since they've been trained/fine-tuned on instruction based data, it isn't as promising to give them "natural" prompts. For instance it would be rare that we ask ChatGPT in a instruction-based way such as: ", instead we would simply ask it: "How do I select the 5th column in a pandas dataframe?"
