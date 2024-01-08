@@ -5,6 +5,44 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 _______
 
 
+## Paper: "Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine"
+* **Read**: Jan 2023
+* **Institution**: Microsoft, OpenAI
+* **Mental Reference**: Making foundation models into spcialist models using general prompt engineering techniques.
+* **Link**: 
+
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_______
+
 
 ## Paper: AI capabilities can be significantly improved without expensive retraining
 * **Read**: Jan 2023
