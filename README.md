@@ -15,7 +15,10 @@ _______
 
 
 ### Solution
-
+Medprompt = three techniques combined into one: 
+1. Dynamic few-shot selection
+2. self-generated chain of thought
+3. choice shuffle ensembling 
 
 ### Applicability: How can it be applied to my current work & research
 
