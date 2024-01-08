@@ -12,16 +12,18 @@ _______
 * **Link**: 
 
 ### Problem
-
+Retraining and fine-tuning foundation models are expensive. Researchers are looking for a way to take on less up-front cost, while making models being applicable to specific doamin use-cases, such as medicine in this paper.
 
 ### Solution
 Medprompt = three techniques combined into one: 
-1. Dynamic few-shot selection
-2. self-generated chain of thought
-3. choice shuffle ensembling 
+1. **Dynamic few-shot selection**: showing a few demonstrations helps the model to adapt to a specific domain and learn to follow the task format. But hand-cafted examples are difficult to migrate over multiple types of problems. Medprompt uses a k-NN clustering in the embedding space using ```text-embedding-ada-002``` to take *k* training examples from the model training set. Basically they generate examples for the model, without any hand-curated examples.
+2. **Self-generated chain of thought**: automated way of creating chain of thought, by asking GPT-3 to generate CoT using the prompt: ```## Question: {{question}} \n {{answer_choices}} \n ## Answer \n model generated chain of thoughr explanation. \n Therefore, the answer is [final model answer (e.g. A,B,C,D)]```. This seems to be better than hand-curated exampels by experts as GPT-4 gives longer and finer-grained step-by-step reasoning logic, which is in alignment with other recent research findings that foundation models write better prompts than experts.
+3. **Choice shuffle ensembling**: The issue is that mutliple choice questions can have ***position bias***, where the model would favor certain options, regardless of the option content. So this technique shuffles the answers and checks if the model is consistent for multiple choice: choice shuffle and self-consistency prompting.
 
 ### Applicability: How can it be applied to my current work & research
-
+* **Challenge 1**: Section 4.4 shows that all of the proposed solutions to this would have significant inference costs, so high frequency API calls would have a difficult time to adopt all three of these. 
+* **Challenge 2**: This looks perhaps good for multiple choice, as for instance the *Choice shuffle ensembling* technique is tailored towards optimising performance for multiple choice. Need to test this on more congitive tasks, can imagine the that the *self-generated CoT* and the *dynamic few-shot* approaches might generally help on other tasks though. 
+* **Benchmark against agent based approaches**: It would be worth testing if it gives better results than Agent based approaches, as those takes a fair bit of cost at inference.
 
 
 
