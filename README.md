@@ -5,6 +5,47 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 _______
 
 
+
+
+
+## Paper: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation
+* **Read**: Jan 2023
+* **Institution**: Microsoft Research
+* **Mental Reference**: Framework for Agents talking to themselves, with or without humans in the loop to solve tasks. Can have a hierarchical structure of a "boss agent" or simply back and fourth chat.
+* **Link**: 
+
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+* Be wary of inference costs here. Endless chats can cost a significant amount (at least if using API calls). Could work when hosting the model on AWS, but would take up a fair amount of resources, so need to check if the acutal output is better than more simple alternatives. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_______
+
 ## Paper: "Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine"
 * **Read**: Jan 2023
 * **Institution**: Microsoft, OpenAI
