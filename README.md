@@ -8,17 +8,54 @@ _______
 
 
 
-## Paper: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation
+## Paper: "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"
 * **Read**: Jan 2023
 * **Institution**: Microsoft Research
-* **Mental Reference**: Framework for Agents talking to themselves, with or without humans in the loop to solve tasks. Can have a hierarchical structure of a "boss agent" or simply back and fourth chat.
+* **Mental Reference**: Open source framework for Agents to converse, with or without humans in the loop to solve tasks. Can have a hierarchical structure of a "boss agent" or simply back and fourth chat.
 * **Link**: 
 
 ### Problem
-
+* Single-agent has issues with divergent thinking (Liang et al., 2023), factuality and reasoning (Du et al., 2023), and provide validation (Wu et al., 2023).
+* The authors ask: how can we facilitate the development of LLM applications that could span a broad spectrum of domains and complexities based on the multi-agent approach?
 
 ### Solution
+A multi-agent framework for agents to converse with each other to solve tasks. They highlight that this works well since due to recent developemnts in: 
+1. LLMs (such as GPT-4) have been chat optimised have shown to be able to incorporate feedback. Usually this is from humans in a chat-based format, but why wouldn't it work to have another agent to do the feedback instead on areas of: provide and seek reasoning, observations, critiques, and validation?
+2. LLMs have shown (with the right prompting) to be good on multiple types of domain tasks, making them flexible for conversations.
+3. LLMs have been shown to be better at digesting smaller sub-tasks (like humans :) ), which multi-agent partitioning can help with.
 
+### Code example
+Link: [example below](https://github.com/microsoft/autogen/blob/main/notebook/agentchat_groupchat.ipynb), [more examples](https://microsoft.github.io/autogen/docs/Examples/)
+```
+llm_config = {"config_list": config_list_gpt4, "cache_seed": 42}
+
+user_proxy = autogen.UserProxyAgent(
+    name="User_proxy",
+    system_message="A human admin.",
+    code_execution_config={"last_n_messages": 2, "work_dir": "groupchat"},
+    human_input_mode="TERMINATE",
+)
+
+coder = autogen.AssistantAgent(
+    name="Coder",
+    llm_config=llm_config,
+)
+
+pm = autogen.AssistantAgent(
+    name="Product_manager",
+    system_message="Creative in software product ideas.",
+    llm_config=llm_config,
+)
+groupchat = autogen.GroupChat(agents=[user_proxy, coder, pm], messages=[], max_round=12)
+manager = autogen.GroupChatManager(groupchat=groupchat, llm_config=llm_config)
+
+# Start query to model:
+user_proxy.initiate_chat(
+    manager, message="Find a latest paper about gpt-4 on arxiv and find its potential applications in software."
+)
+# type exit to terminate the chat
+
+```
 
 ### Applicability: How can it be applied to my current work & research
 * Be wary of inference costs here. Endless chats can cost a significant amount (at least if using API calls). Could work when hosting the model on AWS, but would take up a fair amount of resources, so need to check if the acutal output is better than more simple alternatives. 
@@ -46,7 +83,7 @@ _______
 
 _______
 
-## Paper: "Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine"
+## Paper: "Medprompt: Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine"
 * **Read**: Jan 2023
 * **Institution**: Microsoft, OpenAI
 * **Mental Reference**: Making foundation models into spcialist models using general prompt engineering techniques.
