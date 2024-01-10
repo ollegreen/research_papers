@@ -58,6 +58,7 @@ user_proxy.initiate_chat(
 ```
 
 ### Applicability: How can it be applied to my current work & research
+* Might be a good thing to benhmark against, as this performs better using their built in agents from Autogen compared to Multi-Agent Debate (Liang et al., 2023), LangChain ReAct (LangChain, 2023), vanilla GPT-4, and commercial products ChatGPT + Code Interpreter, and ChatGPT + Plugin (Wolfram Alpha), on the MATH (Hendrycks et al., 2021) dataset. 
 * Be wary of inference costs here. Endless chats can cost a significant amount (at least if using API calls). Could work when hosting the model on AWS, but would take up a fair amount of resources, so need to check if the acutal output is better than more simple alternatives. 
 
 
