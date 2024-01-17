@@ -16,7 +16,7 @@ _______
 We need to know and understand when we can reliably use the prediction, and when we can't. 
 
 ### Solution
-* They look at (minimising) the calibration error in the LLM pipeline.
+* They look at (minimising) the calibration error in the LLM pipeline. Calibration error is the difference between: ```predicted_confidence <-> actual accuracy of prediction```. Minimising this will therefore give us more reliable predicitions. 
 
 They give 4 recommendations based on their work:
 1. **Use ELECTRA for encodings**: 
@@ -25,6 +25,7 @@ They give 4 recommendations based on their work:
 4. **Use Focal Loss for fine-tuning**: 
 
 ### Applicability: How can it be applied to my current work & research
+* Incorporating, analysing and minimising the calibration error seems to be a good metric for understanding the uncertainty of our predictions as we try to minimise it.
 
 ### Problems with the paper
 * The 2nd point of *use Larger Models if possible* would make sense in 2022. I would probably still keep the new relatively smaller models from Mistral still in the loop at evaluation, but compare them to an adjusted GPT-4 model. 
