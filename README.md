@@ -7,20 +7,27 @@ _______
 
 ## Paper: "Uncertainty Quantification with Pre-trained Language Models: A Large-Scale Empirical Analysis"
 * **Read**: Jan 2024
-* **Institution**: MIT & Cambridge
+* **Published**: Oct 2022
+* **Institution**: Cambridge, MIT, Stanford, Carnegie Mellon
 * **Mental Reference**: 
 * **Link**: 
 
 ### Problem
-
+We need to know and understand when we can reliably use the prediction, and when we can't. 
 
 ### Solution
+* They look at (minimising) the calibration error in the LLM pipeline.
 
+They give 4 recommendations based on their work:
+1. **Use ELECTRA for encodings**: 
+2. **Use larger models if possible**:
+3. **Use Temp Scaling as the uncertainty quantifier**:
+4. **Use Focal Loss for fine-tuning**: 
 
 ### Applicability: How can it be applied to my current work & research
 
-
-
+### Problems with the paper
+* The 2nd point of *use Larger Models if possible* would make sense in 2022. I would probably still keep the new relatively smaller models from Mistral still in the loop at evaluation, but compare them to an adjusted GPT-4 model. 
 
 
 
