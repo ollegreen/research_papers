@@ -5,11 +5,46 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 _______
 
 
+## Paper: "Uncertainty Quantification with Pre-trained Language Models: A Large-Scale Empirical Analysis"
+* **Read**: Jan 2024
+* **Institution**: MIT & Cambridge
+* **Mental Reference**: 
+* **Link**: 
 
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+____________
 
 
 ## Paper: "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation"
-* **Read**: Jan 2023
+* **Read**: Jan 2024
 * **Institution**: Microsoft Research
 * **Mental Reference**: Open source framework for Agents to converse, with or without humans in the loop to solve tasks. Can have a hierarchical structure of a "boss agent" or simply back and fourth chat.
 * **Link**: 
@@ -86,7 +121,7 @@ user_proxy.initiate_chat(
 _______
 
 ## Paper: "Medprompt: Can Generalist Foundation Models Outcompete Special-Purpose Tuning? Case Study in Medicine"
-* **Read**: Jan 2023
+* **Read**: Jan 2024
 * **Institution**: Microsoft, OpenAI
 * **Mental Reference**: Making foundation models into spcialist models using general prompt engineering techniques.
 * **Link**: 
@@ -130,7 +165,7 @@ _______
 
 
 ## Paper: AI capabilities can be significantly improved without expensive retraining
-* **Read**: Jan 2023
+* **Read**: Jan 2024
 * **Institution**: UC Berkeley, Open Philantropy
 * **Mental Reference**: Summary of current post-training enhancements to improve LLM performance (such as CoT), quantified on a compute to performance basis.
 * **Link**: https://arxiv.org/pdf/2312.07413.pdf
