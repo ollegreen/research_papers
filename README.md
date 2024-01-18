@@ -5,6 +5,40 @@ Thoughts, summaries and notes on recently read research papers. A research _tink
 _______
 
 
+
+## Paper: "Toolformer: Language MOdels Can Teach Themselves to Use Tools"
+* **Read**: Jan 2024 
+* **Published**: Feb 2023
+* **Institution**: Meta AI
+* **Mental Reference**: 
+* **Link**: 
+
+### Problem
+
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________
+
 ## Paper: "Uncertainty Quantification with Pre-trained Language Models: A Large-Scale Empirical Analysis"
 * **Read**: Jan 2024
 * **Published**: Oct 2022
