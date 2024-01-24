@@ -6,7 +6,7 @@ _______
 
 
 
-## Paper: "Toolformer: Language MOdels Can Teach Themselves to Use Tools"
+## Paper: "Toolformer: Language Models Can Teach Themselves to Use Tools"
 * **Read**: Jan 2024 
 * **Published**: Feb 2023
 * **Institution**: Meta AI
@@ -14,10 +14,14 @@ _______
 * **Link**: 
 
 ### Problem
+To give LLMs the ability to use tools in a reliable manner, previous approaches rely on giving human annotated examples or limit the tool use to task specific settings.
 
+There is a need for something that learns to use tools in a;
+1. Self-supervised way: removing the criteria of needing large human annotated examples, which helps with cost and also the fact that humans might find useful might not be useful to an LLM to do the task
+2. General way: decide for itself when and why to use a tool, as it enables a more comprehensive use of tools that are not tied soley to the task. 
 
 ### Solution
-
+A LLM that is finetuned on task oriented data.
 
 ### Applicability: How can it be applied to my current work & research
 
