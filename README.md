@@ -6,6 +6,42 @@ _______
 
 
 
+
+## Paper: # Large Language Models for Mathematical Reasoning: Progresses and Challenges
+* **Read**: Feb 2024
+* **Institution**: Pennsylvania State University and Temple University
+* **Mental Reference**: Aggregation of math based approaches for using LLMs to solve math.
+* **Link**: https://arxiv.org/pdf/2402.00157.pdf
+
+### Problem
+There has not been a comprehensive study on what methods are currently used and to what effect they have in assisting LLMs to do math.
+
+### Solution
+
+
+### Applicability: How can it be applied to my current work & research
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Paper: "Toolformer: Language Models Can Teach Themselves to Use Tools"
 * **Read**: Jan 2024 
 * **Published**: Feb 2023
