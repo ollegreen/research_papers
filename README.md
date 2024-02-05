@@ -17,6 +17,10 @@ _______
 There has not been a comprehensive study on what methods are currently used and to what effect they have in assisting LLMs to do math.
 
 ### Solution
+They checked multiple methods such as: 
+- Raw prompting frozen SOTA LLMs: GPT-3, ChatGPT, GPT-4, GPT-4V and Bard. 
+- Strategies enhancing frozen LLMs: Methods such as Chain of Thought, using words instead of numbers (An et al., 2023a) and using external tools. 
+- Fine tuned LLMs: (1) Give in-context examples to assist models such as GPT-3 that has issues with this without having in-context examples, (2) generating intermediate steps using "scratchpad", (3) learning from an enhanched dataset and (4) Teacher-Student knowledge distillation where in short a teacher model looks at the student model and assesses what the student model is lacking and subsequently generates examples to improve that area.
 
 
 ### Applicability: How can it be applied to my current work & research
