@@ -22,9 +22,15 @@ They checked multiple methods such as:
 - Strategies enhancing frozen LLMs: Methods such as Chain of Thought, using words instead of numbers (An et al., 2023a) and using external tools. 
 - Fine tuned LLMs: (1) Give in-context examples to assist models such as GPT-3 that has issues with this without having in-context examples, (2) generating intermediate steps using "scratchpad", (3) learning from an enhanched dataset and (4) Teacher-Student knowledge distillation where in short a teacher model looks at the student model and assesses what the student model is lacking and subsequently generates examples to improve that area.
 
+**My takeaways:**
+- Although these current methods such as using adversarial samples in few-shot prompts can make the predictions more robust, they still are not able to be grounded. Especially when it comes to longer or more complex problems. 
+- They mention that *"token frequency in pre-training and the method of tokenization are key to arithmetic proficiency"*, which seems to me mean that you would need to have specialised tokenization to do math, which might help if that's the only task the LLM should do, but doesn't feel on an engineering/deployment side very efficient.
+- Giving access to code/LaTeX in pre-training apparently gives it pretty good improvement in arithmetic, but still not grounded. 
+- The thing that annoys me the most about these results are that prompting makes them more robust, which inherently means you need to guide it. Reference: *"The nature of input prompts greatly affects LLMs’ arithmetic performance (Liu et al., 2023a; Lou et al., 2023). Without prompts, performance drops (Yuan et al., 2023). Models like Chat-GPT, which respond well to instructional system-level messages, demonstrate the importance of prompt type. Instruction tuning in pre-training also emerges as a significant factor (Yue et al., 2023)."* 
 
 ### Applicability: How can it be applied to my current work & research
-- 
+- This paper support my thesis that we need an external tool to do math and not rely on the models cognitive ability to do arithmetic. 
+- Although they can become more robust through some of the specified examples, they are still not grounded, which my hypothesis is will be true when introducing calculators to the equation instead of relying on the LLMs non-deterministic cognitive ability. 
 
 
 
